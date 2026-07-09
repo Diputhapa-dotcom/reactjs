@@ -4,16 +4,22 @@ function App() {
 
 
   return (
-    <BrowserRouter>
-      <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='contact' element={<h1> this is contact page</h1>} />
-          <Route path='hello' element={<h1>This is hello world</h1>} />
-            
-
-      </Routes>
-    </BrowserRouter>
+<BrowserRouter>
+<Routes>
+  <Route path="/about" element={<Home/>}/>
+</Routes>
+</BrowserRouter>
   )
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
