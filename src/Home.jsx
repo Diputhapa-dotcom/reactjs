@@ -4,12 +4,11 @@ import Button from './Button'
 const Home = () => {
   return (
     <>
-<Button name="logout"></Button>
-<Button name="logout"></Button>
-<Button name="logout"></Button>
-<Button name=""></Button>
+<Button name="Register" />
+<Button name="login"/>
+<Button name = {1}/>
 </>
-)
+  )
 }
 
-export default Home 
+export default Home
