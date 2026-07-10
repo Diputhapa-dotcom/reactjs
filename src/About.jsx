@@ -4,7 +4,10 @@ const About = () => {
     // const state = useState(0);
     // const firstItem = state[0]
     // const secondItem = state[1];
-    const [number,setNumber] = useState(10)
+    const [number,setNumber] = useState({
+        name:"Dipu thapa",
+        address:"pokhara"
+    })
     // const [num,setNum] = useState(0);
 const increaseCount = ()=>{
     setNumber(number +1);
@@ -17,7 +20,7 @@ const decreaseCount = ()=>{
 return (
     
   <div>
-<h1>{number}</h1>
+<h1>{number.name}</h1>
 
     <button onClick={increaseCount}>+ </button>
     <button onClick={decreaseCount}> - </button>
