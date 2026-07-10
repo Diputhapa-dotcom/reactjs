@@ -1,9 +1,15 @@
 import React from 'react'
+import Button from './Button'
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
+    <>
+<Button name="logout"></Button>
+<Button name="logout"></Button>
+<Button name="logout"></Button>
+<Button name=""></Button>
+</>
+)
 }
 
-export default Home
+export default Home 
