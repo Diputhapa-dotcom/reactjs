@@ -1,33 +1,22 @@
 import React, { useState } from 'react'
 
 const About = () => {
-    // const state = useState(0);
-    // const firstItem = state[0]
-    // const secondItem = state[1];
-    const [number,setNumber] = useState({
-        name:"Dipu thapa",
-        address:"pokhara"
-    })
-    // const [num,setNum] = useState(0);
-const increaseCount = ()=>{
-    setNumber(number +1);
+const [firstItem,secondItem] = useState(0);
 
-}
-const decreaseCount = ()=>{
-    setNumber(number - 1);
 
-}
-return (
-    
-  <div>
-<h1>{number.name}</h1>
+  function increaseNumber(){
+      secondItem(firstItem +1);
+    }
 
-    <button onClick={increaseCount}>+ </button>
-    <button onClick={decreaseCount}> - </button>
 
-  </div>
-
- )
+  return (
+    <>
+    <h1>{firstItem}</h1>
+    <button onClick={increaseNumber}>+</button>
+  </>
+  )
 }
 
 export default About
+
+
